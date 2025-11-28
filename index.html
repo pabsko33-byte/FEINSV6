@@ -1,0 +1,409 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>FEIS • Finance & Economic Insight Society</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div class="feis-app">
+
+  <!-- BACKGROUND -->
+  <div class="bg-orbit"></div>
+
+  <!-- HEADER -->
+  <header class="top">
+    <div class="top-inner">
+      <div class="brand">
+        <div class="brand-logo">FEIS</div>
+        <div class="brand-text">
+          <span class="brand-name">Finance &amp; Economic Insight Society</span>
+          <span class="brand-tag">Student Fintech Studio</span>
+        </div>
+      </div>
+
+      <nav class="nav">
+        <button class="nav-link" data-scroll="#hero">Intro</button>
+        <button class="nav-link" data-scroll="#desk">Desk marchés</button>
+        <button class="nav-link" data-scroll="#questions">Questions d’investisseur</button>
+        <button class="nav-link" data-scroll="#scenario">Allocation &amp; risque</button>
+        <button class="nav-link" data-scroll="#club">Le club</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- HERO -->
+    <section id="hero" class="section hero">
+      <div class="hero-inner">
+        <div class="hero-left">
+          <p class="hero-tagline">Club finance • FEIS</p>
+
+          <h1 class="hero-title">
+            Lire les marchés comme un professionnel.
+          </h1>
+
+          <p class="hero-sub">
+            FEIS est un studio étudiant qui apprend à lire indices, macro et risques
+            avec une méthode structurée : scénarios, données, discipline. Pas de promesse
+            magique, juste une grille de lecture sérieuse.
+          </p>
+
+          <div class="hero-chips">
+            <span>ETF &amp; indices</span>
+            <span>Macro &amp; banques centrales</span>
+            <span>Crypto labo, pas casino</span>
+            <span>Ateliers marchés &amp; carrière</span>
+          </div>
+
+          <div class="hero-actions">
+            <button class="btn primary" data-scroll="#desk">
+              Ouvrir le desk marchés
+            </button>
+            <button class="btn ghost" data-scroll="#questions">
+              Voir les questions que tout le monde se pose
+            </button>
+          </div>
+        </div>
+
+        <div class="hero-right">
+          <div class="hero-card">
+            <p class="hero-card-label">Snapshot FEIS</p>
+            <p class="hero-card-title">Vue pédagogique, pas conseil d’investissement.</p>
+            <p class="hero-card-text">
+              Indices, ETF &amp; crypto analysés comme en desk : niveau, variation, rôle
+              dans un portefeuille étudiant long terme.
+            </p>
+            <div class="hero-pills">
+              <span>Discipline</span>
+              <span>Lecture de risque</span>
+              <span>Langage pro</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DESK MARCHÉS -->
+    <section id="desk" class="section section-desk">
+      <div class="section-header">
+        <h2 class="section-kicker">Desk marchés • FEIS</h2>
+        <div>
+          <p class="section-title">Vue marchés &amp; crypto (maquette pédagogique)</p>
+          <p class="section-sub">
+            Mini-desk pour s’entraîner à lire les indices : niveau, variation, narration.
+            Plus tard, ce module pourra être branché sur une API temps réel (Financial Times, Yahoo Finance…).
+          </p>
+        </div>
+      </div>
+
+      <div class="desk-layout">
+        <!-- Liste des actifs -->
+        <div class="desk-left">
+          <div class="desk-left-header">
+            <span class="desk-label">Actifs suivis</span>
+            <span class="desk-label-muted">Clique pour charger le graphique</span>
+          </div>
+
+          <div class="asset-list">
+            <button class="asset-row active" data-asset="sp500">
+              <div class="asset-main">
+                <span class="asset-name">S&amp;P 500</span>
+                <span class="asset-tag">Backbone actions US</span>
+              </div>
+              <div class="asset-data">
+                <span class="asset-value" data-field="value-sp500">--</span>
+                <span class="asset-change" data-field="change-sp500">--</span>
+              </div>
+            </button>
+
+            <button class="asset-row" data-asset="nasdaq">
+              <div class="asset-main">
+                <span class="asset-name">NASDAQ 100</span>
+                <span class="asset-tag">Tech / croissance</span>
+              </div>
+              <div class="asset-data">
+                <span class="asset-value" data-field="value-nasdaq">--</span>
+                <span class="asset-change" data-field="change-nasdaq">--</span>
+              </div>
+            </button>
+
+            <button class="asset-row" data-asset="cac40">
+              <div class="asset-main">
+                <span class="asset-name">CAC 40</span>
+                <span class="asset-tag">Actions France</span>
+              </div>
+              <div class="asset-data">
+                <span class="asset-value" data-field="value-cac40">--</span>
+                <span class="asset-change" data-field="change-cac40">--</span>
+              </div>
+            </button>
+
+            <button class="asset-row" data-asset="msciworld">
+              <div class="asset-main">
+                <span class="asset-name">MSCI World</span>
+                <span class="asset-tag">ETF monde</span>
+              </div>
+              <div class="asset-data">
+                <span class="asset-value" data-field="value-msciworld">--</span>
+                <span class="asset-change" data-field="change-msciworld">--</span>
+              </div>
+            </button>
+
+            <div class="desk-split-label">Crypto labo</div>
+
+            <button class="asset-row" data-asset="btc">
+              <div class="asset-main">
+                <span class="asset-name">Bitcoin</span>
+                <span class="asset-tag">Actif spéculatif</span>
+              </div>
+              <div class="asset-data">
+                <span class="asset-value" data-field="value-btc">--</span>
+                <span class="asset-change" data-field="change-btc">--</span>
+              </div>
+            </button>
+
+            <button class="asset-row" data-asset="eth">
+              <div class="asset-main">
+                <span class="asset-name">Ethereum</span>
+                <span class="asset-tag">Réseau / smart contracts</span>
+              </div>
+              <div class="asset-data">
+                <span class="asset-value" data-field="value-eth">--</span>
+                <span class="asset-change" data-field="change-eth">--</span>
+              </div>
+            </button>
+          </div>
+        </div>
+
+        <!-- Graph & détail -->
+        <div class="desk-right">
+          <div class="desk-toolbar">
+            <div class="desk-asset-meta">
+              <p class="desk-asset-name" id="asset-name">S&amp;P 500</p>
+              <p class="desk-asset-tag" id="asset-tag">Backbone actions US</p>
+            </div>
+            <div class="desk-timeframe">
+              <button class="tf-btn active" data-tf="1D">1D</button>
+              <button class="tf-btn" data-tf="1M">1M</button>
+              <button class="tf-btn" data-tf="1Y">1Y</button>
+            </div>
+          </div>
+
+          <div class="desk-chart-shell">
+            <canvas id="desk-chart" width="720" height="320"></canvas>
+          </div>
+
+          <div class="desk-comment">
+            <p class="desk-comment-title">Lecture FEIS de l’actif</p>
+            <p class="desk-comment-text" id="asset-comment">
+              Baromètre large des actions US. Sert souvent de cœur de portefeuille
+              pour un investisseur long terme. Sensible aux taux, aux résultats des
+              grandes entreprises et aux flux globaux de risque.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- QUESTIONS D'INVESTISSEUR -->
+    <section id="questions" class="section section-questions">
+      <div class="section-header">
+        <h2 class="section-kicker">Éducation FEIS</h2>
+        <div>
+          <p class="section-title">Les vraies questions qu’un investisseur sérieux se pose</p>
+          <p class="section-sub">
+            Pas de slogans, pas de “deviens riche vite”. Juste les questions de fond :
+            ETF, livret, risque, timing, carrière.
+          </p>
+        </div>
+      </div>
+
+      <div class="qa-grid">
+        <div class="qa-list">
+          <button class="qa-item" data-qa>
+            <div class="qa-q">
+              Pourquoi des ETF mondiaux plutôt qu’un livret A sur le long terme ?
+            </div>
+            <div class="qa-a">
+              <p>
+                Un livret protège ton capital nominal mais est érodé par l’inflation.
+                Un ETF monde est investi dans des entreprises réelles, avec un rendement
+                attendu supérieur sur 10–20 ans. Le prix à payer : volatilité à court terme.
+              </p>
+              <p>
+                Chez FEIS on apprend : horizon, tolérance au risque, et pourquoi
+                épargne de sécurité ≠ épargne long terme.
+              </p>
+            </div>
+          </button>
+
+          <button class="qa-item" data-qa>
+            <div class="qa-q">
+              Combien mettre en crypto sans flinguer mon sommeil ?
+            </div>
+            <div class="qa-a">
+              <p>
+                La crypto est traitée comme une poche spéculative : 0–5 % du patrimoine
+                max, jamais financée à crédit, jamais avec de l’argent nécessaire
+                à court terme.
+              </p>
+              <p>
+                L’idée : “laboratoire de cycles” pour comprendre volatilité, pas
+                fondation d’un portefeuille.
+              </p>
+            </div>
+          </button>
+
+          <button class="qa-item" data-qa>
+            <div class="qa-q">
+              Comment savoir si je suis trop défensif ou trop agressif ?
+            </div>
+            <div class="qa-a">
+              <p>
+                On combine horizon, stabilité de revenu et réaction émotionnelle aux
+                baisses. Un portefeuille qui te tient éveillé la nuit est mal calibré.
+              </p>
+              <p>
+                Nos ateliers utilisent des scénarios chiffrés : “-30 % en un an, tu fais quoi ?”.
+              </p>
+            </div>
+          </button>
+        </div>
+
+        <aside class="qa-side">
+          <p class="qa-side-title">Format FEIS</p>
+          <p class="qa-side-text">
+            Chaque carte = 1 question réelle qu’un membre s’est posée, traitée avec
+            un langage pro : cash, ETF, risque, cycle, sans commercial.
+          </p>
+          <p class="qa-side-text">
+            Objectif : que chaque étudiant reparte avec un réflexe d’analyse,
+            pas avec “un tuyau”.
+          </p>
+        </aside>
+      </div>
+    </section>
+
+    <!-- SCÉNARIO D'ALLOCATION -->
+    <section id="scenario" class="section section-scenario">
+      <div class="section-header">
+        <h2 class="section-kicker">Outil de scénario</h2>
+        <div>
+          <p class="section-title">Trouver une allocation cohérente avec ton profil</p>
+          <p class="section-sub">
+            Mini-simulateur pédagogique : trois curseurs pour voir comment
+            cash / obligations / ETF monde / poche spéculative peuvent se répartir.
+          </p>
+        </div>
+      </div>
+
+      <div class="scenario-layout">
+        <div class="scenario-inputs">
+          <div class="slider-row">
+            <label for="horizon">Horizon d’investissement</label>
+            <span class="slider-value" id="horizon-label">5–10 ans</span>
+            <input type="range" id="horizon" min="1" max="3" value="2">
+            <div class="slider-steps">
+              <span>Court</span><span>Moyen</span><span>Long</span>
+            </div>
+          </div>
+
+          <div class="slider-row">
+            <label for="risk">Tolérance au risque</label>
+            <span class="slider-value" id="risk-label">Modérée</span>
+            <input type="range" id="risk" min="1" max="3" value="2">
+            <div class="slider-steps">
+              <span>Faible</span><span>Modérée</span><span>Élevée</span>
+            </div>
+          </div>
+
+          <div class="slider-row">
+            <label for="liquidity">Besoin de liquidité</label>
+            <span class="slider-value" id="liquidity-label">Normal</span>
+            <input type="range" id="liquidity" min="1" max="3" value="2">
+            <div class="slider-steps">
+              <span>Très vite</span><span>Normal</span><span>Peu</span>
+            </div>
+          </div>
+
+          <button class="btn primary" id="scenario-run">
+            Simuler un profil FEIS
+          </button>
+        </div>
+
+        <div class="scenario-output">
+          <p class="scenario-title">Allocation pédagogique proposée</p>
+          <div class="scenario-bars">
+            <div class="bar-row">
+              <span>Cash &amp; livret</span>
+              <div class="bar-shell"><div class="bar-fill" id="bar-cash"></div></div>
+              <span class="bar-pct" id="pct-cash">–</span>
+            </div>
+            <div class="bar-row">
+              <span>Obligations / fonds euros</span>
+              <div class="bar-shell"><div class="bar-fill" id="bar-bonds"></div></div>
+              <span class="bar-pct" id="pct-bonds">–</span>
+            </div>
+            <div class="bar-row">
+              <span>ETF monde / actions</span>
+              <div class="bar-shell"><div class="bar-fill" id="bar-equity"></div></div>
+              <span class="bar-pct" id="pct-equity">–</span>
+            </div>
+            <div class="bar-row">
+              <span>Poche spéculative (crypto, small caps…)</span>
+              <div class="bar-shell"><div class="bar-fill" id="bar-spec"></div></div>
+              <span class="bar-pct" id="pct-spec">–</span>
+            </div>
+          </div>
+
+          <p class="scenario-note">
+            Maquette pédagogique : ce n’est ni un conseil individuel, ni une promesse.
+            Le but est d’apprendre à relier horizon, risque et allocation, comme en
+            entretien de gestion de patrimoine.
+          </p>
+        </div>
+      </div>
+    </section>
+
+    <!-- CLUB -->
+    <section id="club" class="section section-club">
+      <div class="section-header">
+        <h2 class="section-kicker">Le club</h2>
+        <div>
+          <p class="section-title">FEIS, un laboratoire étudiant, pas une salle de marché</p>
+          <p class="section-sub">
+            On ne vend rien, on n’a pas de produit à placer. On apprend à lire les marchés,
+            à parler macro, et à utiliser un langage crédible sur un CV ou en entretien.
+          </p>
+        </div>
+      </div>
+
+      <div class="club-grid">
+        <div class="club-card">
+          <h3>Board marchés hebdo</h3>
+          <p>Revue des indices, macro, politiques publiques et risques.</p>
+        </div>
+        <div class="club-card">
+          <h3>Workshops ETF &amp; allocation</h3>
+          <p>Construire un portefeuille cohérent, comprendre la mécanique des ETF.</p>
+        </div>
+        <div class="club-card">
+          <h3>Ateliers carrière</h3>
+          <p>Décoder les métiers : AM, sales, recherche éco, M&amp;A, régulateur…</p>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <p>FEIS • Finance &amp; Economic Insight Society • Maquette étudiante, non contractuelle.</p>
+  </footer>
+</div>
+
+<script src="script.js"></script>
+</body>
+</html>
